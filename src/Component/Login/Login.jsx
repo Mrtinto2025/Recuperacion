@@ -1,22 +1,29 @@
 import React from 'react';
-import './Login.css';
+import './Login.css'
+import { Link } from 'react-router-dom';
 
-function Login() {
+const Login = () => {
   return (
-    <div className="login-container">
-      <h2>Iniciar Sesión</h2>
-      <form className="login-form">
-        <div className="form-group">
-          <label htmlFor="email">Correo Electrónico:</label>
-          <input type="email" id="email" name="email" className="form-control" />
+      <div className=" Container3">
+            <form className="form1">
+                <h2>Inicio de sesion</h2>
+                <div className="form-group1">
+                    <label htmlFor="name">Usuario o Correo Electronico</label><br/>
+                    <input type="text" id="name" required />
+                </div>
+
+                <div className="form-group1">
+                    <label htmlFor="password">Contraseña</label><br />
+                    <input type="password" id="password" required />
+                    <Link>¿Olvido su contraseña?</Link>
+                </div>
+                <div>
+                <Link to="/Registro"> No tienes cuenta? </Link>
+                </div>
+
+                <Link to="/Segunda"><button type="submit" className="submit-button1 ">Enviar</button></Link>
+            </form>
         </div>
-        <div className="form-group">
-          <label htmlFor="password">Contraseña:</label>
-          <input type="password" id="password" name="password" className="form-control" />
-        </div>
-        <button type="submit" className="btn-primary">Iniciar Sesión</button>
-      </form>
-    </div>
   );
 }
 

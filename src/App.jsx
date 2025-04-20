@@ -1,43 +1,25 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import Inicio from './Inicio';
-import Login from './Login';
-import Registro from './Registro';
-import Perfil from './Perfil';
-import './App.css';
+import { useState } from 'react'
+import './App.css'
+import { Route, Routes } from 'react-router-dom';
+import Principal from './Component/Principal/Principal';
+import Login from './Component/Login/Login';
+import Blog from './Component/Blog/Blog';
+import Registro from './Component/Registro/Registro';
+import Usuario from './Component/Usuario/Usuario';
+
 
 function App() {
-  return (
-    <Router>
-      <div className="app-container">
-        <nav className="app-nav">
-          <ul>
-            <li>
-              <Link to="/">Inicio</Link>
-            </li>
-            <li>
-              <Link to="/login">Iniciar Sesión</Link>
-            </li>
-            <li>
-              <Link to="/registro">Registrarse</Link>
-            </li>
-            <li>
-              <Link to="/perfil">Perfil</Link>
-            </li>
-          </ul>
-        </nav>
+  const [Count, SetCount] = useState(0)
+    return(
+      <Routes>
+        <Route path='/Login' element={<Login></Login>}></Route>
+        <Route path='/Usuario' element={<Usuario></Usuario>}></Route>
+        <Route path='/' element={<Principal></Principal>}></Route>
+        <Route path='/Registro' element={<Registro></Registro>}></Route>
+        <Route path='/Blog' element={<Blog></Blog>}></Route>
+      </Routes>
+    );
 
-        <div className="app-content">
-          <Routes>
-            <Route path="/" element={<Inicio />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/registro" element={<Registro />} />
-            <Route path="/perfil" element={<Perfil />} />
-          </Routes>
-        </div>
-      </div>
-    </Router>
-  );
 }
-
 export default App;
+

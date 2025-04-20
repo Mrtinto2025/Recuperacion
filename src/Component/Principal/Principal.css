@@ -1,0 +1,16 @@
+*{
+  margin: auto;
+}
+.d-flex{
+    background-color: rgba(96, 98, 238, 0.445);
+}
+.container-fluid{
+  background-color: rgb(33, 97, 60);
+  font-size: 15px;
+}
+.nav-brand{
+  width: 60px;
+}
+.nav-link{
+  margin-left: 30px;
+}
