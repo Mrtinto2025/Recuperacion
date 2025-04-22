@@ -24,11 +24,11 @@ const Principal = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#action1">Principal</Nav.Link>
-            <Nav.Link href="#action2">Usuario</Nav.Link>
-            <Nav.Link href="#action3">Blog</Nav.Link>
-            <Nav.Link href="#action4">Login</Nav.Link>
-            <Nav.Link href="#action5">Registro</Nav.Link>
+            <Nav.Link href="/">Principal</Nav.Link>
+            <Nav.Link href="/Usuario">Usuario</Nav.Link>
+            <Nav.Link href="/Blog">Blog</Nav.Link>
+            <Nav.Link href="/Login">Login</Nav.Link>
+            <Nav.Link href="/Registro">Registro</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

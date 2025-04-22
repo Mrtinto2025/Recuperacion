@@ -21,7 +21,7 @@ const Login = () => {
                 <Link to="/Registro"> No tienes cuenta? </Link>
                 </div>
 
-                <Link to="/Segunda"><button type="submit" className="submit-button1 ">Enviar</button></Link>
+                <Link to="/"><button type="submit" className="submit-button1 ">Enviar</button></Link>
             </form>
         </div>
   );
