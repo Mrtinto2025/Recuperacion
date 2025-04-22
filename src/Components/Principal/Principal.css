@@ -2,16 +2,19 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-}
 
-.card-container img {
-  width: 50%;
-  height: 300px;
-  margin: 10px;
-  object-fit: contain;
 }
-.imagen-derecha {
-float: right;
-width: 50%;
-margin: 10px;
+.card-container img {
+  height: 300px;
+  top: 320px;
+}
+.texto {
+  width: 60%;
+}
+.tarjeta-derecha {
+  float: right;
+  margin: 10px;
+  height: 300px;
+  position: relative;
+  top: -120px;
 }
