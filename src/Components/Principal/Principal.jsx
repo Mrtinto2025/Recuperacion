@@ -2,10 +2,16 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Figure from 'react-bootstrap/Figure';
+import Laseriedad from '../Imagenes/Laseriedad.jpg'
+import Muyserio from '../Imagenes/Muyserio.jpg'
+import Soloserio from '../Imagenes/Soloserio.jpg'
+import './Principal.css';
+import Image from 'react-bootstrap/Image';
+import Corvett from '../Imagenes/Corvett.jpg'
+
 
 
 
@@ -18,25 +24,21 @@ const Principal = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Link href="#action1">Principal</Nav.Link>
+            <Nav.Link href="#action2">Usuario</Nav.Link>
+            <Nav.Link href="#action3">Blog</Nav.Link>
+            <Nav.Link href="#action4">Login</Nav.Link>
+            <Nav.Link href="#action5">Registro</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
      
-     <h2>Bienvenidos</h2>
+     <h2>El tratado de seriedad</h2>
+     <p> </p>
+    <div className="Imagen-derecha">
+    <Image src={Corvett} fluid />
+    </div>
 
     <Card.Text>
     La economía, en su esencia más pura, es el arte de gestionar recursos 
@@ -49,10 +51,11 @@ const Principal = () => {
     
     <Button variant="outline-info">Info</Button>
 
+    <div className='card-container'>
     <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
+      <Card.Img variant="top" src={Laseriedad} />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <Card.Title>Inicio de la seriedad</Card.Title>
         <Card.Text>
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
@@ -61,9 +64,9 @@ const Principal = () => {
     </Card>
 
     <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
+      <Card.Img variant="top" src={Soloserio} />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <Card.Title>La seriedad del moai</Card.Title>
         <Card.Text>
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
@@ -72,15 +75,16 @@ const Principal = () => {
     </Card>
 
     <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
+      <Card.Img variant="top" src={Muyserio}  />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <Card.Title>perspectiva de los moais</Card.Title>
         <Card.Text>
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
         </Card.Text>
       </Card.Body>
     </Card>
+    </div>
     
     <Figure>
       <Figure.Image
