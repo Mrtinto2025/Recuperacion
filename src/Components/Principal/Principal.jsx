@@ -17,12 +17,13 @@ import './Principal.css';
 const Principal = () => {
   return (
     <div>
+      <header>
       <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
         <Navbar.Brand href="#home">Solo Seriedad</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+          <Nav className="me-auto my-2 my-lg-0">
             <Nav.Link href="/">Principal</Nav.Link>
             <Nav.Link href="/Usuario">Usuario</Nav.Link>
             <Nav.Link href="/Blog">Blog</Nav.Link>
@@ -32,22 +33,28 @@ const Principal = () => {
         </Navbar.Collapse>
       </Container>
     </Navbar>
-  
-     <h2>El tratado de seriedad</h2>
-     <p>
-    La economía, en su esencia más pura, es el arte de gestionar recursos 
-    escasos en un mundo de infinitas necesidades. En un delicado equilibrio, 
-    los mercados danzan entre la oferta y la demanda, 
-    reflejando las aspiraciones y temores de la humanidad. La inversión, 
-    cual semilla en tierra fértil, germina en oportunidades de crecimiento y prosperidad. 
-    Sin embargo, la volatilidad de los ciclos económicos, 
-    nos recuerda la fragilidad de este tejido interconectado. 
-    </p>
-  
+    </header>
+
+    <section>    
+    <Card>
+    <Card.Title>Card Title</Card.Title>
+    <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+    <Card.Text>
+      Some quick example text to build on the card title and make up the
+      bulk of the card's content.
+    </Card.Text>
+    </Card>
+
+    <div>  
     <Button variant="Blog">Blog</Button>
+    </div> 
     
-
-
+    <article>
+      <Card >
+        <Card.Img variant="top" src="holder.js/100px180" />   
+      </Card>
+    </article>
+    
 
     <div className='card-container'>
     <Card >
@@ -83,6 +90,11 @@ const Principal = () => {
       </Card.Body>
     </Card>
     </div>
+    </section>
+
+  <section>
+
+  </section>
   </div>
   );
 }
